@@ -1,0 +1,25 @@
+{
+  "logger": {
+    "cores": [
+    {
+      "level": "info",
+      "encoding": "json"
+    }
+    ],
+    "caller": true,
+    "stacktrace": "error",
+    "development": false
+  },
+  "postgres": {
+    "max_open_conns": 50,
+    "max_idle_conns": 10,
+    "max_life_time_conn": "60s",
+    "server": "postgres://theboatscom:password@127.0.0.1:5432/theboatscom?sslmode=disable&binary_parameters=yes"
+  },
+  "http": {
+    "host": "127.0.0.1",
+    "port": "9090",
+    "debug": true,
+    "level": "debug"
+  }
+}
