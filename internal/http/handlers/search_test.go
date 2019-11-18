@@ -230,7 +230,7 @@ func (s *searchHandlerSuite) TestSuccess() {
 
 	require.Equal(s.T(), http.StatusOK, rec.Code)
 	require.Equal(s.T(),
-		`[{"model_name":"model_name 1","builder_name":"builder_name 1","fleet_name":"fleet_name 1","available":false,"available_from":"0001-01-01T00:00:00Z","available_to":"0001-01-01T00:00:00Z"},{"model_name":"model_name 2","builder_name":"builder_name 2","fleet_name":"fleet_name 2","available":true,"available_from":"0001-01-01T00:00:00Z","available_to":"0001-01-01T00:00:00Z"},{"model_name":"model_name 3","builder_name":"builder_name 3","fleet_name":"fleet_name 3","available":true,"available_from":"0001-01-01T00:00:00Z","available_to":"0001-01-01T00:00:00Z"}]`,
+		`[{"model_name":"model_name 1","builder_name":"builder_name 1","fleet_name":"fleet_name 1","available":false,"available_from":"0001-01-01T00:00:00Z","available_to":"0001-01-01T00:00:00Z"},{"model_name":"model_name 2","builder_name":"builder_name 2","fleet_name":"fleet_name 2","available":true,"available_from":"0001-01-01T00:00:00Z","available_to":"0001-01-01T00:00:00Z"},{"model_name":"model_name 3","builder_name":"builder_name 3","fleet_name":"fleet_name 3","available":false,"available_from":"0001-01-01T00:00:00Z","available_to":"0001-01-01T00:00:00Z"}]`,
 		strings.Trim(rec.Body.String(), "\n"),
 	)
 }
