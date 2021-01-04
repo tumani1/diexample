@@ -43,6 +43,7 @@ Roll back migration
 `./bin/theboatscom migrate down -c /go/src/github.com/tumani1/diexample/configs/config.json -m /go/src/github.com/tumani1/diexample/asstets/migrations`
 
 `-c` - path to config
+
 `-m` - path to migration folder
 
 
