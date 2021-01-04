@@ -35,9 +35,11 @@ Folder contain different implementation DI libraries. I will add another impleme
 
 # Run migrations
 Roll up migration
+
 `./bin/theboatscom migrate up -c /go/src/github.com/tumani1/diexample/configs/config.json -m /go/src/github.com/tumani1/diexample/asstets/migrations`
 
 Roll back migration
+
 `./bin/theboatscom migrate down -c /go/src/github.com/tumani1/diexample/configs/config.json -m /go/src/github.com/tumani1/diexample/asstets/migrations`
 
 `-c` - path to config
@@ -46,7 +48,9 @@ Roll back migration
 
 #Example requests to API
 Curl request for look up data:
+
 `curl -iv -X GET "http://127.0.0.1:9090/api/search?query=test"`
 
 Curl request for autocomplete:
+
 `curl -iv -X GET "http://127.0.0.1:9090/api/autocomplete?query=test"`
