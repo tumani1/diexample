@@ -21,26 +21,26 @@
 
 
 # DI folder
-Folder contain different implementation DI libraries. I will add another implementation in future.
-* sarulabsdi - implementation with use `github.com/sarulabs/di`
-* sarulabsdingo - implementation with use `github.com/sarulabs/dingo`
+Folder contain different implementation DI libraries. I will add another implementation in the future.
+* sarulabsdi - implementation with use `github.com/sarulabs/di` library
+* sarulabsdingo - implementation with use `github.com/sarulabs/dingo` library
 
 
 ## Examples
 # Run http server
-`./bin/theboatscom http-server -c /go/src/github.com/tumani1/diexample/configs/config.json`
+`./bin/app http-server -c /go/src/github.com/tumani1/diexample/configs/config.json`
 
 `-c` - path to config
 
 
 # Run migrations
-Roll up migration
+Roll up migration:
 
-`./bin/theboatscom migrate up -c /go/src/github.com/tumani1/diexample/configs/config.json -m /go/src/github.com/tumani1/diexample/asstets/migrations`
+`./bin/app migrate up -c /go/src/github.com/tumani1/diexample/configs/config.json -m /go/src/github.com/tumani1/diexample/asstets/migrations`
 
-Roll back migration
+Roll back migration:
 
-`./bin/theboatscom migrate down -c /go/src/github.com/tumani1/diexample/configs/config.json -m /go/src/github.com/tumani1/diexample/asstets/migrations`
+`./bin/app migrate down -c /go/src/github.com/tumani1/diexample/configs/config.json -m /go/src/github.com/tumani1/diexample/asstets/migrations`
 
 `-c` - path to config
 
@@ -51,6 +51,7 @@ Roll back migration
 Curl request for look up data:
 
 `curl -iv -X GET "http://127.0.0.1:9090/api/search?query=test"`
+
 
 Curl request for autocomplete:
 
